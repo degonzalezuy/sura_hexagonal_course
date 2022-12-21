@@ -3,6 +3,7 @@ package co.com.bancolombia.usecase.person;
 import co.com.bancolombia.model.person.Person;
 import co.com.bancolombia.model.person.gateways.PersonService;
 import lombok.RequiredArgsConstructor;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RequiredArgsConstructor
@@ -17,5 +18,9 @@ public class PersonUseCase {
 
     public Mono<Float>getBalance(String id){
         return serviceGateway.getBalance(id);
+    }
+
+    public Flux<Person> getPersons(){
+        return serviceGateway.getPersons();
     }
 }

@@ -1,0 +1,14 @@
+Creación de un Modelo
+gradle generateModel --name=[name]
+gradle gm --name [modelName]
+
+
+Creación de un UseCase
+gradle generateUseCase --name=person
+
+Creacion de un Entry Point
+gradle generateEntryPoint --type=WEBFLUX
+gradle gep --type [entryPointType]
+
+Creación de un Driven Adapter
+gradle generateDrivenAdapter --type=GENERIC --name bancolombiaService
